@@ -7,10 +7,10 @@ import java.io.*;
 public class WebServer extends Thread {
 	protected Socket clientSocket;
 	
-	private static final String INDEX = "B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\TestSite\\index.html";
-	private static final String ERROR = "B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\TestSite\\error.html";
-	private static final String STOPPED = "B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\TestSite\\stopped.html";
-	private static final String MAINTENANCE = "B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\TestSite\\maintenance.html";
+	private static final String INDEX = "B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\server-vvs\\TestSite\\index.html";
+	private static final String ERROR = "B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\server-vvs\\TestSite\\error.html";
+	private static final String STOPPED = "B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\server-vvs\\TestSite\\stopped.html";
+	private static final String MAINTENANCE = "B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\server-vvs\\TestSite\\maintenance.html";
 	private static int status = 1;
 	
 	public static int getStatus() {

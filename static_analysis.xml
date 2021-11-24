@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1637759432087" analysisTimestamp="1637759431927" release="">
+  <Project projectName="webserver">
+    <Jar>B:\Andrei\Faculta\An4\LabVVS\project\server-vvs\webserver\bin</Jar>
+    <AuxClasspathEntry>B:\Andrei\Faculta\An4\LabVVS\project\server-vvs\webserver\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\40787\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\40787\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <SrcDir>B:\Andrei\Faculta\An4\LabVVS\project\server-vvs\webserver\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="maintenance" signature="(Ljava/io/PrintWriter;)V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="149" end="169" startBytecode="0" endBytecode="49" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <String value="B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\server-vvs\\TestSite\\maintenance.html" role="FILE_NAME"/>
+    <SourceLine classname="webserver.WebServer" start="149" end="149" startBytecode="6" endBytecode="6" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="149" end="149" startBytecode="6" endBytecode="6" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="running" signature="(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="107" end="145" startBytecode="0" endBytecode="104" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <String value="B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\server-vvs\\TestSite\\error.html" role="FILE_NAME"/>
+    <SourceLine classname="webserver.WebServer" start="125" end="125" startBytecode="124" endBytecode="124" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="125" end="125" startBytecode="124" endBytecode="124" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="running" signature="(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="107" end="145" startBytecode="0" endBytecode="104" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <String value="B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\server-vvs\\TestSite\\index.html" role="FILE_NAME"/>
+    <SourceLine classname="webserver.WebServer" start="109" end="109" startBytecode="33" endBytecode="33" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="109" end="109" startBytecode="33" endBytecode="33" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="stopped" signature="(Ljava/io/PrintWriter;)V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="173" end="193" startBytecode="0" endBytecode="49" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <String value="B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\server-vvs\\TestSite\\stopped.html" role="FILE_NAME"/>
+    <SourceLine classname="webserver.WebServer" start="173" end="173" startBytecode="6" endBytecode="6" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="173" end="173" startBytecode="6" endBytecode="6" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="maintenance" signature="(Ljava/io/PrintWriter;)V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="149" end="169" startBytecode="0" endBytecode="283" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="161" end="161" startBytecode="67" endBytecode="67" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="161" end="161" startBytecode="67" endBytecode="67" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="74" end="103" startBytecode="0" endBytecode="419" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="80" end="80" startBytecode="39" endBytecode="39" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="80" end="80" startBytecode="39" endBytecode="39" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="74" end="103" startBytecode="0" endBytecode="419" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <Method classname="java.io.PrintWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintWriter"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="77" end="77" startBytecode="20" endBytecode="20" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="77" end="77" startBytecode="20" endBytecode="20" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="running" signature="(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="107" end="145" startBytecode="0" endBytecode="532" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="120" end="120" startBytecode="100" endBytecode="100" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="120" end="120" startBytecode="100" endBytecode="100" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="stopped" signature="(Ljava/io/PrintWriter;)V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="173" end="193" startBytecode="0" endBytecode="283" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="185" end="185" startBytecode="67" endBytecode="67" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="185" end="185" startBytecode="67" endBytecode="67" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="74" end="103" startBytecode="0" endBytecode="419" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="101" end="101" startBytecode="159" endBytecode="159" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="101" end="101" startBytecode="159" endBytecode="159" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="running" signature="(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="107" end="145" startBytecode="0" endBytecode="532" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="143" end="143" startBytecode="220" endBytecode="220" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="143" end="143" startBytecode="220" endBytecode="220" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="stopped" signature="(Ljava/io/PrintWriter;)V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="173" end="193" startBytecode="0" endBytecode="283" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="191" end="191" startBytecode="95" endBytecode="95" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="191" end="191" startBytecode="95" endBytecode="95" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="webserver.WebServer" start="41" end="66" startBytecode="0" endBytecode="463" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <LocalVariable name="serverSocket" register="1" pc="6" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="webserver.WebServer" start="60" end="60" startBytecode="97" endBytecode="97" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="webserver.WebServer" start="41" end="41" startBytecode="0" endBytecode="0" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="webserver.WebServer" start="44" end="44" startBytecode="9" endBytecode="9" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.DoomedCodeWarningProperty.DOOMED_CODE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.DEREFS_ARE_CLONED" value="true"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_FALLTHROUGH" priority="2" rank="17" abbrev="SF" category="STYLE" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="74" end="103" startBytecode="0" endBytecode="419" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="91" end="92" startBytecode="118" endBytecode="121" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="91" end="92" startBytecode="118" endBytecode="121" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="74" end="103" startBytecode="0" endBytecode="419" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="90" end="93" startBytecode="84" endBytecode="130" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="90" end="93" startBytecode="84" endBytecode="130" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="webserver.WebServerTest">
+      <SourceLine classname="webserver.WebServerTest" sourcefile="WebServerTest.java" sourcepath="webserver/WebServerTest.java"/>
+    </Class>
+    <Field classname="webserver.WebServerTest" name="clientSocketPort" signature="I" isStatic="true">
+      <SourceLine classname="webserver.WebServerTest" start="15" end="15" startBytecode="0" endBytecode="0" sourcefile="WebServerTest.java" sourcepath="webserver/WebServerTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="1">
+    <Class classname="webserver.WebServerTest">
+      <SourceLine classname="webserver.WebServerTest" sourcefile="WebServerTest.java" sourcepath="webserver/WebServerTest.java"/>
+    </Class>
+    <Field classname="webserver.WebServerTest" name="serverSocket" signature="Ljava/net/ServerSocket;" isStatic="true">
+      <SourceLine classname="webserver.WebServerTest" sourcefile="WebServerTest.java" sourcepath="webserver/WebServerTest.java"/>
+    </Field>
+    <SourceLine classname="webserver.WebServerTest" start="45" end="45" startBytecode="6" endBytecode="6" sourcefile="WebServerTest.java" sourcepath="webserver/WebServerTest.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="1">
+    <Class classname="webserver.WebServerTest">
+      <SourceLine classname="webserver.WebServerTest" sourcefile="WebServerTest.java" sourcepath="webserver/WebServerTest.java"/>
+    </Class>
+    <Field classname="webserver.WebServerTest" name="webServer" signature="Lwebserver/WebServer;" isStatic="true">
+      <SourceLine classname="webserver.WebServerTest" sourcefile="WebServerTest.java" sourcepath="webserver/WebServerTest.java"/>
+    </Field>
+    <SourceLine classname="webserver.WebServerTest" start="45" end="45" startBytecode="0" endBytecode="0" sourcefile="WebServerTest.java" sourcepath="webserver/WebServerTest.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 3 Nov 2021 18:54:04 +0200" total_classes="2" referenced_classes="5" total_bugs="18" total_size="172" num_packages="1" java_version="11.0.11" vm_version="11.0.11+9-LTS-194" cpu_seconds="18.16" clock_seconds="6403.29" peak_mbytes="411.96" alloc_mbytes="2048.00" gc_seconds="0.03" priority_2="13" priority_1="5">
+    <PackageStats package="webserver" total_bugs="18" total_types="2" total_size="172" priority_2="13" priority_1="5">
+      <ClassStats class="webserver.WebServer" sourceFile="WebServer.java" interface="false" size="133" bugs="15" priority_2="10" priority_1="5"/>
+      <ClassStats class="webserver.WebServerTest" sourceFile="WebServerTest.java" interface="false" size="39" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="35" invocations="2" avgMicrosecondsPerInvocation="17716" maxMicrosecondsPerInvocation="29911" standardDeviationMircosecondsPerInvocation="12195"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1637759432087" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
