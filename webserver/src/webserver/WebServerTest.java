@@ -1,68 +1,122 @@
 package webserver;
 
+import org.junit.Before;
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 import static org.junit.Assume.assumeTrue;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.ServerSocket;
-import org.junit.Test;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Arrays;
 
-public class WebServerTest {
-	
-	private static WebServer webServer;
-    private static ServerSocket serverSocket;
-    private static int clientSocketPort;
-    private File file = new File(WebServer.getIndex());
-    public WebServerTest() throws IOException {
+public class WebServerTest
+{
+    File root= new  File("TestSite");
+    File fileHTML= new File(root,"typefile.html");
+    File fileCSS= new File(root,"typefile.css");
+    File fileJS= new File(root,"typefile.js");
+    File fileN1= new File(root,"typefile.js..d");
+
+    WebServer server;
+
+    @Test
+    public void testGetStatus()
+    {
+        server.setStateServer(1);
+        assertEquals(1,server.getStateServer());
+
     }
 
     @Test
-    public void verifyFileCreation() {
-        assertNotNull(file);
+    public void testGetSocketClient() {
+        Socket sock = new Socket();
+        server.setClientSocket(sock);
+        assertEquals(sock,server.getClientSocket());
     }
 
+
+    @Before
+    public void setup() {
+        server=new WebServer();
+    }
+
+    @Test
+    public void testSetPort1()
+    {
+        int port=0;
+        server.setPort(port);
+        assertEquals(false,server.acceptServerPort());
+    }
+
+    @Test
+    public void testAcceptServerPort1()
+    {
+        server.setPort(10005);
+        assertEquals(true,server.acceptServerPort());
+    }
+
+    @Test
+    public void testAcceptServerPort2()
+    {
+        server.setPort(100000);
+        assertEquals(false,server.acceptServerPort());
+    }
+
+    @Test
+    public void testAcceptServerPort3()
+    {
+        server.setPort(-10);
+        assertEquals(false,server.acceptServerPort());
+    }
+
+    @Test
+    public void testAcceptServerPort4()
+    {
+        server.setPort(1024);
+        assertEquals(false,server.acceptServerPort());
+    }
+
+
+    @Test
+    public void testAcceptServerPort5()
+    {
+        server.setPort(65000);
+        assertEquals(false,server.acceptServerPort());
+    }
+
+    @Test
+    public void testListen()
+    {
+        server.setPort(3600);
+        server.acceptServerPort();
+        int srv = server.conectionClient;
+        assertEquals(0,srv);
+
+    }
+    
     @Test
     public void verifyIfServerIsRunning(){
-        assumeTrue(WebServer.getStatus() == 1);
-        assertEquals(1, WebServer.getStatus());
+        server.setStateServer(1);
+        assertEquals(1, server.getStateServer());
     }
 
     @Test
     public void verifyIfServerIsStopped(){
-        assumeTrue(WebServer.getStatus() == 2);
-        assertEquals(2, WebServer.getStatus());
+    	server.setStateServer(3);
+        assertEquals(3, server.getStateServer());
     }
 
     @Test
     public void verifyIfServerIsInMaintenance(){
-        assumeTrue(WebServer.getStatus() == 3);
-        assertEquals(3, WebServer.getStatus());
-    }
-    
-    @Test
-    public void verifySocket() {
-    	assertEquals(webServer.getClientSocket(), serverSocket);
+    	server.setStateServer(2);
+        assertEquals(2, server.getStateServer());
     }
 
-    @Test
-    public void verifyIndexPagePath(){
-        assertEquals("B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\TestSite\\index.html", WebServer.getIndex());
-    }
-
-    @Test
-    public void verifyErrorPagePath(){
-        assertEquals("B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\TestSite\\error.html", WebServer.getError());
-    }
-
-    @Test
-    public void verifyStoppedPagePath(){
-        assertEquals("B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\TestSite\\stopped.html", WebServer.getStopped());
-    }
-
-    @Test
-    public void verifyMaintenancePagePath(){
-        assertEquals("B:\\Andrei\\Faculta\\An4\\LabVVS\\project\\TestSite\\maintenance.html", WebServer.getMaintenance());
-    }
 
 }
